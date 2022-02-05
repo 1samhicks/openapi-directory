@@ -575,7 +575,7 @@ paths:
           required: true
           schema:
             type: string
-        - description: Optional. Sorting field and order
+        - description: Optional. The field to order the results by.
           in: query
           name: orderBy
           schema:
@@ -1063,10 +1063,10 @@ components:
           description: Google Cloud Storage location where input content is located.
       type: object
     ImportAptArtifactsResponse:
-      description: The response message from importing artifacts.
+      description: The response message from importing APT artifacts.
       properties:
         aptArtifacts:
-          description: The Apt artifacts updated.
+          description: The Apt artifacts imported.
           items:
             $ref: "#/components/schemas/AptArtifact"
           type: array
@@ -1106,7 +1106,7 @@ components:
           description: Google Cloud Storage location where input content is located.
       type: object
     ImportYumArtifactsResponse:
-      description: The response message from importing artifacts.
+      description: The response message from importing YUM artifacts.
       properties:
         errors:
           description: Detailed error info for packages that were not imported.
@@ -1114,7 +1114,7 @@ components:
             $ref: "#/components/schemas/ImportYumArtifactsErrorInfo"
           type: array
         yumArtifacts:
-          description: The yum artifacts updated.
+          description: The yum artifacts imported.
           items:
             $ref: "#/components/schemas/YumArtifact"
           type: array

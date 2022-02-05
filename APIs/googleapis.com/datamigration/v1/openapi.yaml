@@ -1155,6 +1155,7 @@ components:
             - DATABASE_PROVIDER_UNSPECIFIED
             - CLOUDSQL
             - RDS
+            - AURORA
           type: string
         state:
           description: The current connection profile state (e.g. DRAFT, READY, or FAILED).
@@ -1190,6 +1191,7 @@ components:
             - DATABASE_PROVIDER_UNSPECIFIED
             - CLOUDSQL
             - RDS
+            - AURORA
           type: string
       type: object
     Empty:

@@ -1874,7 +1874,7 @@ components:
           description: Optional. Dynamic group metadata like queries and status.
         groupKey:
           $ref: "#/components/schemas/EntityKey"
-          description: Required. Immutable. The `EntityKey` of the `Group`.
+          description: Required. The `EntityKey` of the `Group`.
         labels:
           additionalProperties:
             type: string
